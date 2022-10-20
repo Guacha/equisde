@@ -18,9 +18,11 @@ import java.util.Scanner;
  * @author Prodeveloper
  */
 public class Equisde {
+    
+    String a = "Holis";
 
     public static void LeerC(Scanner sc, String file_name) { //Mostrar Datos de Clientes.txt
-        boolean hay = false;
+        boolean hay = true;
         while (hay == false) {
             try {
                 BufferedReader br = new BufferedReader(new FileReader(file_name + ".txt"));
@@ -32,7 +34,6 @@ public class Equisde {
 
                 }
                 br.close();
-                hay = true;
             } catch (IOException ex) {
                 System.out.println("No se encontrĂ³ archivo");
                 file_name = sc.nextLine();
